@@ -4,6 +4,7 @@ FROM caddy:${VERSION}-builder AS builder
 
 RUN xcaddy build \
     --with github.com/lucaslorentz/caddy-docker-proxy/v2
+    --with github.com/caddy-dns/lego-deprecated
 
 FROM caddy:$VERSION
 
