@@ -9,4 +9,4 @@ FROM caddy:$VERSION
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-CMD ["caddy"]
+CMD ["caddy", "run"]
